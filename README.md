@@ -100,7 +100,7 @@ gre2 Link encap:UNSPEC HWaddr 6C-3D-CF-72-00-00-B0-B6-00-00-00-00-00-00-00-00
           RX bytes:2782629 (2.6 MiB) TX bytes:6674435 (6.3 MiB)
 </code></pre>
 
-<p>For an example of this shim in use see the <a href="/kb/7DtDDDoSProtection">7 Days to Die DDoS protection tutorial</a>.</p>
+<p>For an example of this shim in use see the <a href="https://www.x4b.net/kb/7DtDDDoSProtection">7 Days to Die DDoS protection tutorial</a>.</p>
 
 <h3>How this works</h3>
 
@@ -110,7 +110,7 @@ gre2 Link encap:UNSPEC HWaddr 6C-3D-CF-72-00-00-B0-B6-00-00-00-00-00-00-00-00
 
 <p>The kernel chooses an outgoing IP from the records matcing the destination from the routing table. Multiple routes are sorted based on the value of the metric:</p>
 
-<p><img src="http://img.x4b.org/13-08-2014/22_44_13_new_54_Notepad_.png" alt="Output of Route"></p>
+Output of Route
 
 <p>It is possible to alter the metric and make the kernel router prefer the desired interface above others. However this will affect all applications and services on the server. This includes private services such as SSH, and makes it difficult to use the additional IP addresses on the server.</p>
 
